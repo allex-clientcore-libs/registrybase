@@ -1,0 +1,27 @@
+{
+  "name": "allex_registrybaseclientcorelib",
+  "version": "1.0.0",
+  "description": "AllexJS Registry Base Class",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/allex-clientcore-libs/registrybase.git"
+  },
+  "keywords": [
+    "ecosystem:AllexJS",
+    "registry",
+    "base",
+    "client",
+    "core",
+    "lib"
+  ],
+  "author": "Andrija Petrovic <andrija.hers@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/allex-clientcore-libs/registrybase/issues"
+  },
+  "homepage": "https://github.com/allex-clientcore-libs/registrybase#readme"
+}
