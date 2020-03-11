@@ -2,7 +2,8 @@ function createRegistryBase(execlib){
   'use strict';
   var lib = execlib.lib,
     q = lib.q,
-    qlib = lib.qlib;
+    qlib = lib.qlib,
+    myrequire = require('./myrequirecreator')(execlib);
   function RegistryBase(){
     lib.DIContainer.call(this);
   }
@@ -25,7 +26,7 @@ function createRegistryBase(execlib){
   RegistryBase.prototype.finalizeRegister = function (modulename) {
     var d, ret;
     try {
-      return q(this.register(modulename, require(modulename)(execlib)));
+      return q(this.register(modulename, myrequire(modulename)(execlib)));
     }
     catch(e){
       if(execlib.execSuite.installFromError){
