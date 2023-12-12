@@ -1,6 +1,6 @@
 {
   "name": "allex_registrybaseclientcorelib",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "AllexJS Registry Base Class",
   "main": "index.js",
   "scripts": {

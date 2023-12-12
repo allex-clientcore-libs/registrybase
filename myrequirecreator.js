@@ -31,7 +31,11 @@ function createMyRequire (execlib) {
     try {
       return require(name);
     } catch (e) {
-      ret = require.resolve.paths(name).reduce(mytryer.bind(null, name), null);
+      ret = (require && require.resolve && execlib.lib.isFunction(require.resolve.paths))
+      ?
+      require.resolve.paths(name).reduce(mytryer.bind(null, name), null)
+      : 
+      null;
       if (ret !== null) {
         return ret;
       }
